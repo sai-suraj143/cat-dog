@@ -58,57 +58,43 @@ button:active {
   transform: scale(0.8);
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
-  body {
-    position: relative;
+  .body {
+    background-color: #111;
   }
 
   .container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
   }
-  .cat {
-    width: 250px;
-    height: 250px;
-  }
+
+  .cat,
   .dog {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    bottom: 0;
+    width: 300px;
+    height: 300px;
   }
-  #image1 {
-    width: 250px;
-    height: 250px;
+
+  #for_cat,
+  #for_dog {
+    width: 15rem;
+    font-size: 0.8rem;
   }
+
+  #for_cat {
+    top: 85%;
+    left: 25%;
+  }
+
+  #for_dog {
+    top: 95%;
+    left: 25%;
+  }
+
+  #image1,
   #image {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
   #for_cat {
-    position: absolute;
-    top: 42%;
-    left: 40%;
-    width: 8rem;
-    height: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    font-size: 1rem;
-    background-color: lightgoldenrodyellow;
-  }
-  #for_dog {
-    position: absolute;
-    top: 92%;
-    left: 20%;
-    width: 15rem;
-    height: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    font-size: 1rem;
-    background-color: lightgoldenrodyellow;
+    top: 50%;
+    left: 25%;
   }
 }
